@@ -49,7 +49,7 @@ const Hero = ({ todayPlaying, playSoon }: Props) => {
       <div className="absolute top-32 z-10 left-0 flex items-start flex-col">
         <div
           className={`${
-            istoday && "scale-125"
+            istoday && "scale-150"
           } transition-all ease-in-out select-none`}
         >
           <motion.div
@@ -70,7 +70,7 @@ const Hero = ({ todayPlaying, playSoon }: Props) => {
         </div>
         <div
           className={`${
-            !istoday && "scale-125"
+            !istoday && "scale-150"
           } transition-all ease-in-out select-none`}
         >
           <motion.div

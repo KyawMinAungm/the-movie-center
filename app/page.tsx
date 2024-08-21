@@ -1,4 +1,5 @@
 import Hero from '@/components/Hero'
+import MovieList from '@/components/MovieList';
 import React from 'react'
 const token = process.env.TMDB_API_KEY;
 const base_url = "https://api.themoviedb.org/3";
@@ -32,6 +33,8 @@ const page = async () => {
   return (
     <>
       <Hero todayPlaying = {todayPlaying} playSoon ={playSoon}/>
+      <MovieList movies={todayPlaying} title='Currently playing'/>
+      <MovieList movies={playSoon} title='Coming soon'/>
     </>
   )
 }
