@@ -14,7 +14,7 @@ const MovieList = ({movies , title } : Props) => {
     
     <div className='w-full p-10 '>
         <div className="w-full flex justify-between items-center my-10">
-            <h4 className='text-xl'>{title}</h4>
+            <h4 className='text-xl font-bold'>{title}</h4>
             <Link className='flex items-center justify-center text-sm gap-2 text-gray-500' href={`/${path}`}>
                 <p>see more</p>
                 <FaArrowRightLong/>
